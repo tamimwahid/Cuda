@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* =================== */
+/* Reuseble Components */
+/* =================== */
+
+h1, h2, h4, h6, p, q, ul, span{
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+h2, h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+img {
+    margin: 1rem auto;
+    display: block;
+}
+
+
+/* ============== */
+/* Header Section */
+/* ============== */
+
+header {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(135 80 156 / 0.9), rgb(135 80 156 / 0.9)), url(img-bg/img-bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 2.6rem 0rem;
+}
+
+.logo img {
+    width: auto;
+    height: 4vh;
+    float: left;
+}
+
+.main-nav {
+    padding-top: 1rem;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: .2rem .6rem;
+    margin-left: .2rem;
+}
+
+.main-nav ul li a:hover {
+    background-color: #643a79;
+    border-radius: .2rem;
+}
+
+.active {
+    background-color: #643a79;
+
+}
+
+/* Monile Menu */
+
+.mobile-menu span{
+	color: #fff;
+	font-size: 2.6rem;
+	float: right;
+	margin-top: -2.5rem;
+	display: none;
+}
+
+.mobile-menu span:hover {
+	cursor: pointer;
+}
+
+.overlay {
+	width: 0;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0, 0.9);
+	z-index: 1;
+	overflow-x: hidden;
+	transition: .5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+}
+
+.overlay a {
+	text-decoration: none;
+	display: block;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: #999;
+	padding: 1rem 0rem;
+}
+
+.overlay a:hover {
+	color: #fff;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 0rem;
+	right: 2.2rem;
+	font-size: 3.2rem;
+}
+
+
+/* Hero Section */
+
+.hero {
+    margin-top: 12rem;
+    color: #fff;
+}
+
+.hero-btn {
+    width: 10rem;
+    margin: 6rem auto;
+    padding: .8rem;
+    background-color: #eb7d4b;
+    border-radius: .3rem;
+    border-bottom: .2rem solid #c86a40;
+    cursor: pointer;
+}
+
+.hero-btn a {
+    text-decoration: none;
+}
+
+.hero-btn a:hover {
+    text-decoration: none;
+    background-color: #f06d31;
+    cursor: pointer;
+}
+
+.hero-btn h6 {
+    color: #fff;
+}
+
+/* ============== */
+/* Header Section */
+/* ============== */
+
+.service {
+    width: 100%;
+    height: auto;
+    padding: 8rem 0;
+    background-image: linear-gradient(rgba(23, 194, 163, 0.8), rgba(23, 194, 163, 0.8)), url(img-bg/img-bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.service-box {
+    padding: 4rem 3rem 0 3rem;
+}
+
+.service-box img {
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* ============== */
+/* Team Section */
+/* ============== */
+
+.team {
+    width: 100%;
+    height: auto;
+    padding: 8rem 0;
+    background-image: linear-gradient(#e7f1f8, #e7f1f8), url(img-bg/img-bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #3c4761;
+}
+
+.team-box {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.team-box img{
+    height: 10rem;
+    width: auto;
+    border-radius: 50%;
+}
+
+.team-box span {
+    color: #30bae7;
+}
+
+.team-box li i {
+    background-color: #bdd1df;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .3rem .3rem;
+    border-radius: 50%;
+    border: .1rem solid #bdd1df;
+    margin-top: .8rem;
+}
+
+/* ============== */
+/* Skill Section */
+/* ============== */
+
+.skill {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img-bg/img-bg-4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 8rem 0;
+    color: #3c4761;
+    text-align: center;
+}
+
+.skill-box {
+    padding-top: 4rem;
+}
+
+
+svg.radial-progress {
+    height: auto;
+    max-width: 14rem;
+    padding: 2rem;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+  
+svg.radial-progress circle {
+    fill: rgb(0 0 0 / 0%);
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: .2rem;
+}
+  
+svg.radial-progress circle.incomplete {
+      opacity: 0.2;
+}
+  
+svg.radial-progress circle.complete {
+      stroke-dasharray: 219.91148575129;
+}
+  
+svg.radial-progress text {
+    fill: #3a3a3a;
+    text-anchor: middle;
+}
+
+.web-design {
+    stroke: #30bae7;
+}
+
+.html-css {
+    stroke: #d74680;
+}
+
+.graphic-design {
+    stroke: #15c7a8;
+}
+
+.ux-ui {
+    stroke: #eb7d4b;
+}
+
+/* ================= */
+/* Portfolio Section */
+/* ================= */
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(255, 221, 153, 0.9), rgba(255, 221, 153, 0.9)), url(img-bg/img-bg-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    text-align: center;
+    padding: 8rem 0;
+    color: #393939;
+}
+
+.portfolio-filter {
+    margin: 2rem 0;
+}
+
+.portfolio-filter button {
+    background-color: #ebc985;
+    color: #393939;
+    padding: .2rem 1rem;
+    margin: 0 .2rem;
+    border: 0;
+    border-radius: .2rem;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.portfolio-filter button:hover {
+    cursor: pointer;
+    box-shadow: inset .1rem .2rem .3rem #393939;
+}
+
+.portfolio-item {
+    padding-top: 2rem;
+}
+
+.portfolio-item img {
+    width: 70%;
+    height: auto;
+}
+
+.portfolio-btn {
+    width: 13rem;
+    margin: 3rem auto;
+    padding: .8rem;
+    background-color: #eb7d4b;
+    border-radius: .3rem;
+    border-bottom: .2rem solid #c86a40;
+}
+
+.portfolio-btn a {
+    text-decoration: none;
+}
+
+.portfolio-btn a:hover {
+    background-color: #f06d31;
+}
+.portfolio-btn h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* ================= */
+/* About Section */
+/* ================= */
+
+.about {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(img-bg/img-bg-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 0;
+    color: #fff;
+
+}
+
+.about-box {
+    padding-top: 4rem;
+    display: flex;
+}
+
+.left-content {
+    margin: 0 1rem;
+}
+
+.left-content img {
+    height: 12vh;
+    border-radius: 50%;
+}
+
+.right-content {
+    margin: 0 2rem;
+}
+
+.right-content q, .right-content h4, .right-content span {
+    text-align: left;
+}
+
+.right-content span {
+    color: #ffdd99;
+}
+
+.right-content h4 {
+    padding-top: 1rem;
+}
+
+/* =============== */
+/* Contact Section */
+/* =============== */
+
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: #3c5499;
+    color: #fff;
+    padding: 8rem 24rem;
+    text-align: center;
+}
+
+form {
+    padding-top: 4rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    background-color: #273a71;
+    border: .1rem solid #273a71;
+    border-radius: .2rem;
+    padding: .8rem;
+    color: #fff;
+    outline: none;
+}
+
+.contact form ::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.contact textarea {
+    margin-top: 2rem;
+}
+
+input[type="submit"] {
+    width: 16rem;
+    background-color: #30bae7;
+    border: 0;
+    border-bottom: .4rem solid #10a1d1;
+    border-radius: .4rem;
+    margin-top: 4rem;
+    color: #fff;
+    padding: .6rem 0;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* ============== */
+/* Footer Section */
+/* ============== */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #344b8e;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer-social li{
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.ftr {
+    color: #30bae7;
+}

@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1124px) {
+    .contact {
+        padding: 8rem 14rem;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-menu span {
+        font-size: 2rem;
+        margin-top: 0;
+        display: block;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        padding: 8rem 12rem;
+    }
+
+    .service-box {
+        padding: 4rem 0;
+    }
+
+    .team-box {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .portfolio-item img {
+        width: 80%;
+    }
+
+    .about-box {
+        display: block;
+    }
+
+    .right-content q, .right-content h4, .right-content span {
+        text-align: center;
+    }
+
+    .right-content {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-menu span {
+        margin-top: -3.4rem;
+    }
+
+    .service-box {
+        padding: 1rem 5rem;
+    }
+
+    .team-box {
+        padding: 2rem 0;
+    }
+
+    .contact {
+        padding: 8rem 6rem;
+    }
+
+    input[type="text"] {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 90%;
+    }
+
+    .contact {
+        padding: 8rem 4rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .contact {
+        padding: 8rem 2rem;
+    }
+
+    .footer-social {
+        margin: 0;
+        padding: 0;
+    }
+}
